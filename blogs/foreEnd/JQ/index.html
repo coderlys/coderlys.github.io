@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>jquery 学习之路 | 前端学习笔记</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="./images/favicon.ico">
+    <meta name="description" content="前端学习笔记">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="./assets/css/0.styles.7b00b7c5.css" as="style"><link rel="preload" href="./assets/js/app.a2028b6d.js" as="script"><link rel="preload" href="./assets/js/3.f347c82f.js" as="script"><link rel="preload" href="./assets/js/1.d0ce8f0b.js" as="script"><link rel="preload" href="./assets/js/17.f0d94806.js" as="script"><link rel="prefetch" href="./assets/js/10.f00be53f.js"><link rel="prefetch" href="./assets/js/11.9cea9637.js"><link rel="prefetch" href="./assets/js/12.36b93efc.js"><link rel="prefetch" href="./assets/js/13.7d01f5f4.js"><link rel="prefetch" href="./assets/js/14.b75120c0.js"><link rel="prefetch" href="./assets/js/15.00692b78.js"><link rel="prefetch" href="./assets/js/16.ba02a69d.js"><link rel="prefetch" href="./assets/js/18.02d44035.js"><link rel="prefetch" href="./assets/js/19.b80513e3.js"><link rel="prefetch" href="./assets/js/20.add586d0.js"><link rel="prefetch" href="./assets/js/21.969c93af.js"><link rel="prefetch" href="./assets/js/22.7870b4c5.js"><link rel="prefetch" href="./assets/js/23.fbae0971.js"><link rel="prefetch" href="./assets/js/24.eb28efaa.js"><link rel="prefetch" href="./assets/js/25.9202dacc.js"><link rel="prefetch" href="./assets/js/4.21ef34d6.js"><link rel="prefetch" href="./assets/js/5.cb6e59aa.js"><link rel="prefetch" href="./assets/js/6.5ddc16d2.js"><link rel="prefetch" href="./assets/js/7.70ac515b.js"><link rel="prefetch" href="./assets/js/8.37e304ac.js"><link rel="prefetch" href="./assets/js/9.fdc09109.js">
+    <link rel="stylesheet" href="./assets/css/0.styles.7b00b7c5.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-1aefc0b4><div data-v-1aefc0b4><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-1aefc0b4 data-v-1aefc0b4><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-25ba6db2 data-v-1aefc0b4 data-v-1aefc0b4><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>前端学习笔记</h3> <p class="description" data-v-25ba6db2 data-v-25ba6db2>前端学习笔记</p> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><!---->
+            
+          <!---->
+          2022
+        </a></span></div></div> <div class="hide" data-v-1aefc0b4><header class="navbar" data-v-1aefc0b4><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/./" class="home-link router-link-active"><img src="./images/avatar.jpg" alt="前端学习笔记" class="logo"> <span class="site-name">前端学习笔记</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/./" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      前端笔记
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4></h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/./blogs/foreEnd/CS/" class="nav-link"><i class="iconfont reco-tag"></i>
+  CS
+</a></li></ul></li><li class="dropdown-item"><h4></h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/./blogs/foreEnd/JS/" class="nav-link"><i class="iconfont reco-tag"></i>
+  JS
+</a></li><li class="dropdown-subitem"><a href="/./blogs/foreEnd/JQ/" aria-current="page" class="nav-link router-link-exact-active router-link-active"><i class="iconfont reco-tag"></i>
+  JQ
+</a></li></ul></li><li class="dropdown-item"><h4></h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/./blogs/foreEnd/VUE/2/" class="nav-link"><i class="iconfont reco-tag"></i>
+  VUE2
+</a></li><li class="dropdown-subitem"><a href="/./tag/vue3/" class="nav-link"><i class="iconfont reco-tag"></i>
+  VUE3
+</a></li></ul></li><li class="dropdown-item"><h4></h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/./blogs/foreEnd/Git/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Git
+</a></li></ul></li><li class="dropdown-item"><h4></h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/./blogs/foreEnd/UI/ElementUI/" class="nav-link"><i class="iconfont reco-tag"></i>
+  ElementUI
+</a></li><li class="dropdown-subitem"><a href="/./blogs/foreEnd/UI/Vant/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Vant
+</a></li><li class="dropdown-subitem"><a href="/./blogs/foreEnd/UI/Bootstrap/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Bootstrap
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      后端笔记
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4></h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/./blogs/backEnd/node/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Node
+</a></li><li class="dropdown-subitem"><a href="/./blogs/backEnd/node/koa/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Koa
+</a></li><li class="dropdown-subitem"><a href="/./blogs/backEnd/node/express/" class="nav-link"><i class="iconfont reco-tag"></i>
+  EXpress
+</a></li></ul></li><li class="dropdown-item"><h4></h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/./blogs/backEnd/database/mysql/" class="nav-link"><i class="iconfont reco-tag"></i>
+  MySQL
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/./timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-1aefc0b4></div> <aside class="sidebar" data-v-1aefc0b4><div class="personal-info-wrapper" data-v-39576ba9 data-v-1aefc0b4><!----> <!----> <div class="num" data-v-39576ba9><div data-v-39576ba9><h3 data-v-39576ba9>12</h3> <h6 data-v-39576ba9>Articles</h6></div> <div data-v-39576ba9><h3 data-v-39576ba9>10</h3> <h6 data-v-39576ba9>Tags</h6></div></div> <ul class="social-links" data-v-39576ba9></ul> <hr data-v-39576ba9></div> <nav class="nav-links"><div class="nav-item"><a href="/./" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      前端笔记
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4></h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/./blogs/foreEnd/CS/" class="nav-link"><i class="iconfont reco-tag"></i>
+  CS
+</a></li></ul></li><li class="dropdown-item"><h4></h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/./blogs/foreEnd/JS/" class="nav-link"><i class="iconfont reco-tag"></i>
+  JS
+</a></li><li class="dropdown-subitem"><a href="/./blogs/foreEnd/JQ/" aria-current="page" class="nav-link router-link-exact-active router-link-active"><i class="iconfont reco-tag"></i>
+  JQ
+</a></li></ul></li><li class="dropdown-item"><h4></h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/./blogs/foreEnd/VUE/2/" class="nav-link"><i class="iconfont reco-tag"></i>
+  VUE2
+</a></li><li class="dropdown-subitem"><a href="/./tag/vue3/" class="nav-link"><i class="iconfont reco-tag"></i>
+  VUE3
+</a></li></ul></li><li class="dropdown-item"><h4></h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/./blogs/foreEnd/Git/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Git
+</a></li></ul></li><li class="dropdown-item"><h4></h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/./blogs/foreEnd/UI/ElementUI/" class="nav-link"><i class="iconfont reco-tag"></i>
+  ElementUI
+</a></li><li class="dropdown-subitem"><a href="/./blogs/foreEnd/UI/Vant/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Vant
+</a></li><li class="dropdown-subitem"><a href="/./blogs/foreEnd/UI/Bootstrap/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Bootstrap
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      后端笔记
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4></h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/./blogs/backEnd/node/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Node
+</a></li><li class="dropdown-subitem"><a href="/./blogs/backEnd/node/koa/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Koa
+</a></li><li class="dropdown-subitem"><a href="/./blogs/backEnd/node/express/" class="nav-link"><i class="iconfont reco-tag"></i>
+  EXpress
+</a></li></ul></li><li class="dropdown-item"><h4></h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/./blogs/backEnd/database/mysql/" class="nav-link"><i class="iconfont reco-tag"></i>
+  MySQL
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/./timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-25ba6db2 data-v-1aefc0b4><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>jquery 学习之路</h3> <!----> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><!---->
+            
+          <!---->
+          2022
+        </a></span></div></div> <div data-v-1aefc0b4><main class="page"><section><div class="page-title"><h1 class="title">jquery 学习之路</h1> <div data-v-f875f3fc><!----> <i class="iconfont reco-date" data-v-f875f3fc><span data-v-f875f3fc>3/17/2021</span></i> <!----> <i class="tags iconfont reco-tag" data-v-f875f3fc><span class="tag-item" data-v-f875f3fc>jquery</span></i></div></div> <div class="theme-reco-content content__default"><h1 id="jquery"><a href="#jquery" class="header-anchor">#</a> jquery</h1> <h2 id="一-为什么要学jquery"><a href="#一-为什么要学jquery" class="header-anchor">#</a> 一，为什么要学jquery</h2> <p><strong>使用javascript开发过程中，有许多的缺点：</strong></p> <p>查找元素的方法单一，麻烦。
+遍历数组很麻烦，通常要嵌套一大堆的for循环。
+有兼容性问题。
+想要实现简单的动画效果，也很麻烦
+代码冗余。</p> <h2 id="二-jquery到底是什么"><a href="#二-jquery到底是什么" class="header-anchor">#</a> 二，jquery到底是什么</h2> <p>jQuery就是一个js库，使用jQuery的话，会比使用JavaScript更简单。</p> <p>js库：把一些常用到的方法写到一个单独的js文件，使用的时候直接去引用这js文件就可以了。
+（animate.js、common.js）</p> <p>我们知道了，jQuery其实就是一个js文件，里面封装了一大堆的方法方便我们的开发，
+其实就是一个加强版的common.js，因此我们学习jQuery，其实就是学习jQuery这个js文件中封装的一大堆方法。</p> <h2 id="三-jquery的版本问题"><a href="#三-jquery的版本问题" class="header-anchor">#</a> 三，jquery的版本问题</h2> <p><strong>大版本分类：</strong></p> <ul><li>1.x版本：能够兼容IE678浏览器</li> <li>2.x版本：不能兼容IE678浏览器</li> <li>3.x版本：不能兼容IE678浏览器，更加的精简（在国内不流行，因为国内使用jQuery的主要目的就是兼容IE678）</li></ul> <p><strong>关于压缩版和未压缩版：</strong></p> <ul><li>jquery-1.12.4.min.js:压缩版本，适用于生产环境，因为文件比较小，去除了注释、换行、空格等东西，但是基本没有颗阅读性。</li> <li>jquery-1.12.4.js:未压缩版本，适用于学习与开发环境，源码清晰，易阅读。</li></ul> <h2 id="四-jquery的入口函数"><a href="#四-jquery的入口函数" class="header-anchor">#</a> 四，jquery的入口函数</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>*//第一种写法* $(document).ready(function() {  }); *//第二种写法* $(function() {  });
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="五-jq对象和dom对象-重要"><a href="#五-jq对象和dom对象-重要" class="header-anchor">#</a> 五，jq对象和dom对象(重要)</h2> <ol><li>DOM对象：使用JavaScript中的方法获取页面中的元素返回的对象就是dom对象。</li> <li>jQuery对象：jquery对象就是使用jquery的方法获取页面中的元素返回的对象就是jQuery对象。</li> <li>jQuery对象其实就是DOM对象的包装集<strong>包装了DOM对象的集合（伪数组）</strong></li> <li>DOM对象与jQuery对象的方法不能混用。</li></ol> <p>jQuery对象转换成DOM对象：</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">var</span> $li <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&quot;li&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//第一种方法（推荐使用）</span>
+$li<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+<span class="token comment">//第二种方法</span>
+$li<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>DOM对象转换成jQuery对象：【联想记忆：花钱】</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">var</span> $obj <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span>domObj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// $(document).ready(function(){});就是典型的DOM对象转jQuery对象</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h2 id="六-jquery方法"><a href="#六-jquery方法" class="header-anchor">#</a> 六，jquery方法</h2> <h3 id="each"><a href="#each" class="header-anchor">#</a> each()</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>  var arr = [1, 3, 5, 7, 8]
+​    var a = $.each(arr, function (index, value) {
+​       console.log(index, value);
+​      return index + value
+​    })
+​    console.log(a);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>each()： 静态方法不支持在回调函数中对应遍历数组进行处理</p> <h3 id="map"><a href="#map" class="header-anchor">#</a> map()</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>  var arr = [1, 3, 5, 7, 8]
+​    var b = $.map(arr, function (index, value) {
+​      return index + value
+​    })
+​    console.log(b);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>map()：静态方法可以在回调函数中调用return对遍历的数组进行处理</p> <h3 id="trim"><a href="#trim" class="header-anchor">#</a> trim()</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code> var str = &quot;   lys   &quot;
+var res = $.trim(str)
+ console.log(res);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>trim()：除去字符串的两边的字符串的空格</p> <h3 id="iswindow"><a href="#iswindow" class="header-anchor">#</a> isWindow()</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>var w = window;
+var res = $.isWindow(w)
+console.log(res);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>isWindow()：作用判断传入的对象时候是window对象</p> <p>返回值：如果是window对象返回：true</p> <p>​			   如果不是window对象返回fasle</p> <h3 id="isarray"><a href="#isarray" class="header-anchor">#</a> isArray()</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>var a = [a, 2, 45, 2] 
+var res = $.isArray(a);
+console.log(res);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>isArray()：作用判断传入对象是否真数组</p> <p>返回值：如果是数组返回：true</p> <p>​			   如果不是数组返回fasle</p> <h3 id="isfunction"><a href="#isfunction" class="header-anchor">#</a> isFunction()</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>var fn=function(){}
+var res=$.isFunction(fn)
+console.log(res)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>isFunction()：作用判断传入的对象时候是函数</p> <p>返回值：如果是函数返回：true</p> <p>​			   如果不是函数返回fasle</p> <h3 id="holdready"><a href="#holdready" class="header-anchor">#</a> holdReady()</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;head&gt;
+    &lt;script src=&quot;js/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script&gt;
+        $.holdReady(true);
+        $(function () {
+            alert(&quot;ready&quot;)
+        })
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;button&gt;按钮&lt;/button&gt;
+    &lt;script&gt;
+        var btn = document.getElementsByTagName(&quot;button&quot;)[0]
+        btn.onclick = function () {
+            $.holdReady(false)
+        }
+    &lt;/script&gt;
+&lt;/body&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><p>$holdReady()函数用于暂停或恢复ready()事件的执行</p> <p>**注意：**1. 该方法必须在文档靠前部分被调用，例如，在头部加载完 jQuery 脚本之后，立刻调用该方法。如果在 ready 事件已经被调用后再调用该方法，将不会起作用。</p> <ol start="2"><li>首先调用$.holdReady(true)[调用后 ready 事件将被锁定]。当准备好执行 ready 事件时，调用$.holdReady(false)。
+3. 可以对 ready 事件添加多个锁定，每个锁定对应一次$.holdReady(false)[解锁]调用。ready 事件将在所有的锁定都被解除，并且页面也已经准备好的情况下被触发。</li></ol> <h2 id="七-jquery选择器"><a href="#七-jquery选择器" class="header-anchor">#</a> 七，jquery选择器</h2> <h3 id="empty"><a href="#empty" class="header-anchor">#</a> empty</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;head&gt;
+  &lt;script src=&quot;js/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;style&gt;
+        div {
+            width: 100px;
+            height: 200px;
+            background-color: red;
+        }
+    &lt;/style&gt;
+    &lt;script&gt;
+        $(function () {
+            var div = $(&quot;div:empty&quot;);
+            console.log(div);
+        })
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div&gt;&lt;/div&gt;
+    &lt;div&gt;我是div&lt;/div&gt;
+    &lt;div&gt;他们我是div&lt;/div&gt;
+    &lt;div&gt;
+        &lt;span&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;p&gt;&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><p>empty()：作用找到既没有文本内容也没有子元素的指定元素</p> <h3 id="parent"><a href="#parent" class="header-anchor">#</a> parent</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>    $(function () {
+​      var div = $(&quot;div:parent&quot;);
+​      console.log(div);
+​    })
+  &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div&gt;&lt;/div&gt;
+    &lt;div&gt;我是div&lt;/div&gt;
+    &lt;div&gt;他们我是div&lt;/div&gt;
+    &lt;div&gt;
+​    &lt;span&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+        &lt;p&gt;&lt;/p&gt;
+  &lt;/div&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p>parent：作用找到有文本内容或有子元素的指定元素</p> <h3 id="contains"><a href="#contains" class="header-anchor">#</a> contains()</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;script&gt;  
+$(function () {
+​      var div = $(&quot;div:contains(我是div)&quot;)
+​      console.log(div);
+​    })
+&lt;/script&gt;
+
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;我是div&lt;/div&gt;
+&lt;div&gt;他们我是div&lt;/div&gt;
+&lt;div&gt;
+    &lt;span&gt;&lt;/span&gt;
+&lt;/div&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>contains(text)：作用：找到包含指定文本内容的指定元素</p> <h3 id="has"><a href="#has" class="header-anchor">#</a> has()</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code> $(function () {
+​      var $div = $(&quot;div:has(span)&quot;)
+​      console.log($div);
+​    })
+
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;我是div&lt;/div&gt;
+&lt;div&gt;他们我是div&lt;/div&gt;
+&lt;div&gt;
+    &lt;span&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div&gt;
+   &lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>has()：作用：找到包含指定子元素的指定元素</p> <h3 id="siblings"><a href="#siblings" class="header-anchor">#</a> siblings()</h3> <p>siblings()：作用用于查找当前元素的同胞元素</p> <p>​				主要作用就是除了自己外的其他同胞元素设置样式或其他事件</p> <h3 id="children"><a href="#children" class="header-anchor">#</a> children()</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>   // 获取li元素找下层的box元素
+     var box=$(li).children(&quot;.box&quot;)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>children()：方法返回被选元素的指定子元素的所有子元素</p> <h3 id="each-2"><a href="#each-2" class="header-anchor">#</a> each()</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code> $(&quot;.nav&gt;li&quot;).each(function(index,value){
+            var url=&quot;url(\&quot;./img/bg.png\&quot;) no-repeat 0 &quot;+(index*-24)+&quot;px&quot;;
+            $(this).children(&quot;span&quot;).css(&quot;background&quot;,url)
+        })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>​	each()：遍历方法规定每个匹配的元素固定执行的函数</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>$(selector).each(function(index,element))
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><table><thead><tr><th style="text-align:left;">参数</th> <th style="text-align:left;">描述</th></tr></thead> <tbody><tr><td style="text-align:left;"><em>function(index,element)</em></td> <td style="text-align:left;">必需。为每个匹配元素规定运行的函数。<em>index</em> - 选择器的 index 位置<em>element</em> - 当前的元素（也可使用 &quot;this&quot; 选择器）</td></tr></tbody></table> <h3 id="nextall"><a href="#nextall" class="header-anchor">#</a> nextAll()</h3> <p>方法返回被选元素之后的所有同级元素。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'.more'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">nextAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="八-jquery属性和属性节点"><a href="#八-jquery属性和属性节点" class="header-anchor">#</a> 八，jquery属性和属性节点</h2> <h3 id="什么是属性"><a href="#什么是属性" class="header-anchor">#</a> 什么是属性？</h3> <p>对象身上保存的变量就是属性</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function Person(){}
+var p=new Person();
+p.name=&quot;lnj&quot;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="如何操作属性"><a href="#如何操作属性" class="header-anchor">#</a> 如何操作属性？</h3> <p>对象.属性名称=值</p> <p>对象.属性名称</p> <p>对象[&quot;属性名称&quot;]=值</p> <p>对象[&quot;属性名称&quot;]</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function Person(){}
+var p=new Person();
+p.name=&quot;lnj&quot;
+p[name]=&quot;zs&quot;
+console.log(p.name);
+console.log(p[&quot;name&quot;])
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="什么事属性节点"><a href="#什么事属性节点" class="header-anchor">#</a> 什么事属性节点？</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;span name=&quot;666&quot;&gt;&lt;/span&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>在编写HTML代码时，在HTML标签中添加的属性就是节点</p> <p>在浏览器中找到span这个DOM元素之后，展开看到的都是属性</p> <p>在attributes属性中保持的所有内容都是属性的节点</p> <h3 id="如何操作属性节点"><a href="#如何操作属性节点" class="header-anchor">#</a> 如何操作属性节点？</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;span name=&quot;666&quot;&gt;&lt;/span&gt;
+    &lt;script&gt;
+​    var span = document.getElementsByTagName(&quot;span&quot;)[0];
+​    span.setAttribute(&quot;name&quot;, &quot;123&quot;)
+​    console.log(span.getAttribute(&quot;name&quot;));
+  &lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>DOM元素.setAttribute（ &quot;属性名称&quot;，&quot;值&quot;）</p> <p>DOM元素.getAttribute（&quot;属性名称&quot;）</p> <h3 id="属性和属性节点有什么区别"><a href="#属性和属性节点有什么区别" class="header-anchor">#</a> 属性和属性节点有什么区别？</h3> <p>任何对象都有属性，但是只有DOM对象才有属性节点</p> <h3 id="attr"><a href="#attr" class="header-anchor">#</a> attr()</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;body&gt;
+    &lt;span class=&quot;box&quot;&gt;&lt;/span&gt;
+&lt;/body&gt;
+&lt;script&gt;
+    $(function () {
+        console.log($(&quot;span&quot;).attr(&quot;class&quot;));  //box
+        $(&quot;span&quot;).attr(&quot;class&quot;, &quot;abc&quot;)
+        console.log($(&quot;span&quot;).attr(&quot;class&quot;));  //abc
+    })
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>attr()：作用获取或者设置属性节点的值</p> <ol><li>可以传递一个参数，也可以传递两个参数</li> <li>如果传递一个参数，代表获取属性节点的值</li> <li>如果传递两个参数，代表设置属性节点的值</li></ol> <p>注意点：</p> <ul><li>如果是获取：无论找到多少个元素，都只会返回第一个元素指定的属性节点的值</li> <li>如果是设置：找到多少个元素就会设置多少个元素</li> <li>如果是设置：如果设置的属性节点不存在，那么系统会自动新增</li></ul> <h3 id="removeattr"><a href="#removeattr" class="header-anchor">#</a> removeAttr()</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;body&gt;
+    &lt;span class=&quot;box&quot; name=&quot;ab&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;abca&quot; name=&quot;cd&quot;&gt;&lt;/span&gt;
+&lt;/body&gt;
+&lt;script&gt;
+    $(function () {
+        $(&quot;span&quot;).removeAttr(&quot;class name&quot;)
+    })
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>removeAttr(name) ：删除属性节点</p> <p>注意点：</p> <ul><li>[ ] 会删除所有找到元素指定的属性节点</li></ul> <h3 id="prop"><a href="#prop" class="header-anchor">#</a> prop()</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;body&gt;
+    &lt;div class=&quot;abc&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;qwe&quot;&gt;&lt;/div&gt;
+    &lt;input type=&quot;checkbox&quot; checked&gt;
+&lt;/body&gt;
+&lt;script&gt;
+    var div = $(&quot;div&quot;).prop(&quot;class&quot;)
+    console.log(div); //abc
+    var div = $(&quot;div&quot;).eq(1).prop(&quot;class&quot;);
+    console.log(div); //qwe
+    
+    $(&quot;div&quot;).prop(&quot;class&quot;, &quot;aaa&quot;)  //div的class都是变为aaa
+    console.log($(&quot;input&quot;).prop(&quot;checked&quot;));  //true
+    console.log($(&quot;input&quot;).attr(&quot;checked&quot;)); //checked
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>prop()：作用获取或者设置属性节点的值</p> <p>prop()和attr()区别</p> <ul><li>在操作属性节点时，具有返回true和false两个属性的属性节点
+<ul><li>如：checked ，selected，disabled 使用prop()，其他的使用attr()</li></ul></li></ul> <h3 id="切换图片src案例"><a href="#切换图片src案例" class="header-anchor">#</a> 切换图片src案例</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;body&gt;
+	&lt;input type=&quot;text&quot; name=&quot;&quot; id=&quot;&quot;&gt;
+	&lt;button class=&quot;btn&quot;&gt;切换图片&lt;/button&gt;
+	&lt;br&gt;
+	&lt;img width=&quot;200px&quot; src=&quot;https://www.baidu.com/img/2020dong_36ab26b0975e2a69e81f707084a9e7e8.gif&quot; alt=&quot;&quot;&gt;
+&lt;/body&gt;
+&lt;script&gt;
+	var src=document.getElementsByTagName(&quot;input&quot;)[0]
+	$(&quot;.btn&quot;).click(function(){
+		$(&quot;img&quot;).attr(&quot;src&quot;,src.value)
+	})
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p><img src="C:%5CUsers%5CAdministrator%5CDesktop%5CSnipaste_2020-12-31_15-26-32.png" alt="Snipaste_2020-12-31_15-26-32"></p> <h3 id="addclass"><a href="#addclass" class="header-anchor">#</a> addClass()</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;style&gt;
+        div {
+            width: 100px;
+            height: 100px;
+        }
+        .class1 {
+            background-color: red;
+        }
+        .class2 {
+            border: 10px solid;
+        }
+  &lt;/style&gt;
+&lt;body&gt;
+    &lt;button&gt;添加类&lt;/button&gt;
+    &lt;button&gt;删除类&lt;/button&gt;
+    &lt;button&gt;切换类&lt;/button&gt;
+    &lt;div&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;script&gt;
+    $(&quot;button&quot;).eq(0).click(function () {
+        $(&quot;div&quot;).addClass(&quot;class1 class2&quot;)
+    })
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><p>addClass(class)：作用：添加一个类</p> <ul><li>如果要添加多个，多个类名之间用空格隔开即可</li></ul> <h3 id="removeclass"><a href="#removeclass" class="header-anchor">#</a> removeClass()</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>$(&quot;buton&quot;).eq(1).click(function(){
+	$(&quot;div&quot;).removeClass(&quot;class2&quot;)
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>removeClass(class)：作用删除一个类</p> <ul><li>如果想删除多个，多个类名之间用空格隔开即可</li></ul> <h3 id="toggleclass"><a href="#toggleclass" class="header-anchor">#</a> toggleClass()</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>  $(&quot;button&quot;).eq(2).click(function () {
+        $(&quot;div&quot;).toggleClass(&quot;class1&quot;)
+    })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>toggleClass(class)：作用切换类</p> <ul><li>有就删除，没有就添加</li></ul> <h3 id="html"><a href="#html" class="header-anchor">#</a> html()</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;button&gt;设置html&lt;/button&gt;
+&lt;button&gt;获取html&lt;/button&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;script&gt;
+    $(function () {
+        var btn = document.querySelectorAll(&quot;button&quot;);
+        btn[0].onclick = function () {
+            $(&quot;div&quot;).html(&quot;&lt;p&gt;我是p标签&lt;span&gt;我是span&lt;/span&gt;&lt;/p&gt;&quot;)
+        }
+         btn[1].onclick = function () {
+            console.log($(&quot;div&quot;).html());
+        }
+    })
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>html() ：和原生js的innerHTML一模一样</p> <h3 id="append"><a href="#append" class="header-anchor">#</a> append()</h3> <p>append() 方法在被选元素的结尾插入指定的内容，不会覆盖之前的html结构内容</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token function">$</span><span class="token punctuation">(</span>selector<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>content<span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">index<span class="token punctuation">,</span>html</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li><em>content</em>  （必需）  <strong>规定要插入的内容（可包含 HTML 标签）</strong></li> <li>function(<em>index,html</em>)  （可选）**规定返回待插入内容的函数 **
+<ul><li><em>index</em> - 返回集合中元素的 index 位置</li> <li><em>html</em> - 返回被选元素的当前 HTML</li></ul></li></ul> <h3 id="text"><a href="#text" class="header-anchor">#</a> text()</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>    &lt;button&gt;设置text&lt;/button&gt;
+    &lt;button&gt;获取text&lt;/button&gt;
+    &lt;div&gt;&lt;/div&gt;
+ $(function () {
+        var btn = document.querySelectorAll(&quot;button&quot;);
+        btn[0].onclick = function () {
+            $(&quot;div&quot;).text(&quot;我是text内容&quot;)
+        }
+        btn[1].onclick = function () {
+            console.log($(&quot;div&quot;).text());
+        }
+    })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>text()：和原生js的innerText()一模一样</p> <h3 id="val"><a href="#val" class="header-anchor">#</a> val()</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>    &lt;input type=&quot;text&quot; name=&quot;&quot; id=&quot;&quot;&gt;
+&lt;script&gt;
+    $(function () {
+        var btn = document.querySelectorAll(&quot;button&quot;);
+        btn[0].onclick = function () {
+            $(&quot;input&quot;).val(&quot;请输入内容&quot;)
+        }
+        btn[1].onclick = function () {
+            console.log($(&quot;input&quot;).val());
+        }
+    })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>val()：方法返回或设置被选元素的值，该方法大多用于 input 元素，和原生js的value()类似</p> <h2 id="九-操作css"><a href="#九-操作css" class="header-anchor">#</a> 九，操作css</h2> <h3 id="css"><a href="#css" class="header-anchor">#</a> css()</h3> <h4 id="_1-设置css样式"><a href="#_1-设置css样式" class="header-anchor">#</a> 1.设置css样式</h4> <p>​		作用：操作css样式的方法</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;body&gt;
+    &lt;div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;script&gt;
+    $(function () {
+        $(&quot;div&quot;).css(&quot;width&quot;, &quot;100px&quot;)
+    })
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><ul><li>逐个设置css样式</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;script&gt;
+    $(function () {
+        $(&quot;div&quot;).css(&quot;width&quot;, &quot;100px&quot;).css(&quot;height&quot;, &quot;100px&quot;).css(&quot;background-color&quot;, &quot;red&quot;)
+    })
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ul><li>链式设置css样式</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;script&gt;
+    $(function () {
+        $(&quot;div&quot;).css({
+            width: &quot;100px&quot;,
+            height: &quot;100px&quot;,
+            background: &quot;red&quot;
+        })
+    })
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><ul><li>批量设置css样式</li></ul> <h4 id="_2-获取css样式"><a href="#_2-获取css样式" class="header-anchor">#</a> 2.获取css样式</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;script&gt;
+    $(function () {
+        console.log($(&quot;div&quot;).css(&quot;height&quot;));
+    })
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="位置"><a href="#位置" class="header-anchor">#</a> 位置</h3> <h4 id="offset"><a href="#offset" class="header-anchor">#</a> offset()</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>  * {
+            margin: 0px;
+            padding: 0px;
+     }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background: red;
+            border: solid 20px;
+            padding: 20px;
+            margin: 50px 80px;
+        }
+&lt;script&gt;
+    $(function () {
+        console.log($(&quot;div&quot;).offset().left); //80
+    })
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><p>offset()：获取元素距离窗口的偏移位置</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;script&gt;
+    $(function () {
+        $(&quot;div&quot;).offset({
+            left: 800
+        })
+        console.log($(&quot;div&quot;).offset().left); //800
+    })
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>offset({left:8000})：设置元素离窗口的偏移的位置</p> <h4 id="position"><a href="#position" class="header-anchor">#</a> position()</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>       .box {
+            width: 500px;
+            height: 500px;
+            background: pink;
+            border: solid 20px;
+            padding: 20px;
+            margin: 50px 80px;
+            position: relative;
+        }
+        .box .bx {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            left: 300px;
+        }
+&lt;body&gt;
+    &lt;div class=&quot;box&quot;&gt;
+        &lt;div class=&quot;bx&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;script&gt;
+    $(function () {
+        console.log($(&quot;.bx&quot;).position().left);  //300
+    })
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><p>position()：作用获取元素距离定位元素的偏移位置</p> <ul><li>注意点：position方法只能获取，不能设置偏移的位置</li></ul> <h4 id="scrolltop"><a href="#scrolltop" class="header-anchor">#</a> scrollTop()</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code> $(function () {
+        window.onscroll = function () {
+            console.log($(&quot;html&quot;).scrollTop());
+            //为IE浏览器的兼容的情况使用以下
+              console.log($(&quot;html&quot;).scrollTop() + $(&quot;body&quot;).scrollTop());
+        }
+    })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>$(&quot;button&quot;).click(function () {
+ 	 $(&quot;html&quot;).scrollTop(600)
+ 	 //为IE浏览器的兼容的情况使用以下
+     $(&quot;html,body&quot;).scrollTop(600)
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>scrollTop()：返回或设置匹配元素的滚动条的垂直位置。</p> <h3 id="尺寸"><a href="#尺寸" class="header-anchor">#</a> 尺寸</h3> <h4 id="width"><a href="#width" class="header-anchor">#</a> width()</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code> div {
+            width: 200px;
+            height: 200px;
+            background: red;
+            border: solid 20px;
+            padding: 20px;
+     }
+    $(function () {
+        console.log($(&quot;div&quot;).width());   //200px
+    })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>width()：返回被选元素的宽度</p> <h4 id="height"><a href="#height" class="header-anchor">#</a> height()</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code> div {
+            width: 200px;
+            height: 200px;
+            background: red;
+            border: solid 20px;
+            padding: 20px;
+     }
+    $(function () {
+        console.log($(&quot;div&quot;).height());   //200px
+    })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>height()：返回被选元素的宽度</p> <h4 id="innerwidth"><a href="#innerwidth" class="header-anchor">#</a> innerWidth()</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>  div {
+            width: 200px;
+            height: 200px;
+            background: red;
+            border: solid 20px;
+            padding: 20px;
+        }
+&lt;script&gt;
+    $(function () {
+        console.log($(&quot;div&quot;).innerWidth());  //240
+    })
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>innerWidth()：返回当前匹配元素的内宽度,包括元素的内边距(padding)
+但不包括外边距(margin)、边框(border)等部分的宽度</p> <h4 id="innerheight"><a href="#innerheight" class="header-anchor">#</a> innerHeight()</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>  div {
+            width: 200px;
+            height: 200px;
+            background: red;
+            border: solid 20px;
+            padding: 20px;
+        }
+&lt;script&gt;
+    $(function () {
+        console.log($(&quot;div&quot;).innerHeight());  //240
+    })
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>innerHeight()：返回当前匹配元素的内高度,包括元素的内边距(padding)
+但不包括外边距(margin)、边框(border)等部分的高度</p> <h2 id="十-事件"><a href="#十-事件" class="header-anchor">#</a> 十，事件</h2> <h3 id="事件"><a href="#事件" class="header-anchor">#</a> 事件</h3> <h4 id="click"><a href="#click" class="header-anchor">#</a> click()</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;body&gt;
+    &lt;button&gt;按钮&lt;/button&gt;
+&lt;/body&gt;
+&lt;script&gt;
+    $(function () {
+        $(&quot;button&quot;).click(function () {
+            console.log(&quot;click&quot;);
+        })
+    })
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>click()：点击触发事件</p> <p>注意点：</p> <ul><li>编码效率略高</li> <li>部分事件jquery没有实现，所以不能添加</li> <li>可以添加多个相同或不同类型的事件，不会覆盖</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;body&gt;
+    &lt;button&gt;按钮&lt;/button&gt;
+&lt;/body&gt;
+&lt;script&gt;
+    $(function () {
+        $(&quot;button&quot;).on(&quot;click&quot;, function () {
+            console.log(&quot;click&quot;);
+        })
+    })
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>注意点：</p> <ul><li>编码效率略低</li> <li>所有js事件都可以添加</li> <li>可以添加多个相同或不同类型的事件，不会覆盖</li></ul> <h4 id="mouseover"><a href="#mouseover" class="header-anchor">#</a> mouseover()</h4> <h4 id="mouseout"><a href="#mouseout" class="header-anchor">#</a> mouseout()</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;body&gt;
+    &lt;div class=&quot;box1&quot;&gt;
+        &lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;script&gt;
+    $(function () {
+        $(&quot;.box1&quot;).mouseover(function () {
+            console.log(&quot;box1移入&quot;);
+        });
+        $(&quot;.box1&quot;).mouseout(function () {
+            console.log(&quot;box1移除&quot;);
+        })
+    })
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p>mouseover()：鼠标移入事件</p> <p>mouseout()：鼠标移出事件</p> <p>mouseover / mouseout 事件子元素被移入或移出也会触发父元素的事件</p> <h4 id="mouseenter"><a href="#mouseenter" class="header-anchor">#</a> mouseenter()</h4> <h4 id="mouseleave"><a href="#mouseleave" class="header-anchor">#</a> mouseleave()</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>  $(&quot;.box1&quot;).mouseenter(function () {
+            console.log(&quot;box1移入&quot;);
+        });
+  $(&quot;.box1&quot;).mouseleave(function () {
+            console.log(&quot;box1移出&quot;);
+        })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>mouseenter：鼠标移入事件</p> <p>mouseleave：鼠标移出事件</p> <p>mouseenter / mouseleave事件，子元素被移入移出不会触发父元素的事件（推荐大家使用）</p> <h4 id="hover"><a href="#hover" class="header-anchor">#</a> hover()</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>  $(&quot;.box1&quot;).hover(function () {
+            console.log(&quot;box1移入&quot;);
+        }, function () {
+            console.log(&quot;box1移出&quot;);
+        })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>hover()：事件同时监听鼠标移入和移出的事件，</p> <h4 id="tab选项卡案例"><a href="#tab选项卡案例" class="header-anchor">#</a> TAB选项卡案例</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>   &lt;div class=&quot;box&quot;&gt;
+        &lt;ul class=&quot;nav&quot;&gt;
+            &lt;li class=&quot;active&quot;&gt;H5+C3&lt;/li&gt;
+            &lt;li&gt;jquery&lt;/li&gt;
+            &lt;li&gt;C语言&lt;/li&gt;
+            &lt;li&gt;Go语言&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;ul class=&quot;text&quot;&gt;
+            &lt;li class=&quot;active&quot;&gt;&lt;img src=&quot;./images/11.jpg&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;img src=&quot;./images/12.jpg&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;img src=&quot;./images/13.jpg&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;img src=&quot;./images/14.jpg&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+     $(function () {
+     $(&quot;.nav&gt;li&quot;).mouseenter(function () {
+            $(this).siblings().removeClass(&quot;active&quot;)
+            $(this).addClass(&quot;active&quot;);
+
+            var index = $(this).index()
+            $(&quot;.text&gt;li&quot;).eq(index).siblings().removeClass(&quot;active&quot;)
+            $(&quot;.text&gt;li&quot;).eq(index).addClass(&quot;active&quot;)
+        })
+      })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><h4 id="无限循环滚动"><a href="#无限循环滚动" class="header-anchor">#</a> 无限循环滚动</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code> $(function(){
+            var speed=0;
+            var item;
+            gd()
+            function gd(){
+                item=setInterval(function(){
+                    speed=speed+-10;
+                    if(speed&lt;=-1200){
+                        speed=0
+                    }
+                    $(&quot;ul&quot;).css(&quot;left&quot;,speed)
+                },100)
+            }
+            $(&quot;li&quot;).mouseenter(function(){
+                clearInterval(item)
+                $(this).siblings(&quot;li&quot;).css(&quot;opacity&quot;,0.2)
+            })
+            $(&quot;li&quot;).mouseleave(function(){
+                gd()
+                $(this).siblings(&quot;li&quot;).css(&quot;opacity&quot;,1)
+            })
+        })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><h4 id="scroll"><a href="#scroll" class="header-anchor">#</a> scroll()</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>$(window).scroll(function(){
+
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>scroll()：当用户滚动指定元素时，会发生scroll事件</p> <h4 id="remove"><a href="#remove" class="header-anchor">#</a> remove</h4> <p>​	remove()：方法移除被选元素，包括所有的文本和子节点，也会移除被选元素的数据和事件</p> <h3 id="事件解绑"><a href="#事件解绑" class="header-anchor">#</a> 事件解绑</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code> $(&quot;button&quot;).off()
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>off()：方法如果不传递参数，会移除所有的事件</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>$(&quot;button&quot;).off(&quot;click&quot;)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>off()：方法如果传递一个参数，会移除所有指定类型的事件</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>  function text1() {
+      console.log(&quot;text1&quot;);
+  }
+  $(&quot;button&quot;).off(&quot;click&quot;, text1)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>off()：方法如果传递两个参数，会移除所有指定类型的指定类型的指定事件</p> <h3 id="事件冒泡"><a href="#事件冒泡" class="header-anchor">#</a> 事件冒泡</h3> <p>事件冒泡：子元素向父元素冒泡</p> <p>防止冒泡方法如下</p> <p>1.方法一：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;body&gt;
+    &lt;div class=&quot;box1&quot;&gt;
+        &lt;div class=&quot;box2&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;script&gt;
+    $(function () {
+        $(&quot;.box1&quot;).click(function () {
+            alert(&quot;box1&quot;)
+        })
+        $(&quot;.box2&quot;).click(function () {
+            alert(&quot;box2&quot;)
+            return false
+        })
+    })
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p>2.方法二：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;script&gt;
+    $(function () {
+        $(&quot;.box1&quot;).click(function () {
+            alert(&quot;box1&quot;)
+        })
+        $(&quot;.box2&quot;).click(function (event) {
+            alert(&quot;box2&quot;)
+            event.stopPropagation();
+        })
+    })
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h3 id="阻止默认事件"><a href="#阻止默认事件" class="header-anchor">#</a> 阻止默认事件</h3> <p>作用：阻止默认跳转的事件</p> <p>1.方法一：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;body&gt;
+    &lt;a href=&quot;https://www.baidu.com/&quot;&gt;注册&lt;/a&gt;
+&lt;/body&gt;
+&lt;script&gt;
+    $(function () {
+        $(&quot;a&quot;).click(function () {
+            alert(&quot;注册&quot;)
+            return false  
+        })
+    })
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>2.方法二：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;body&gt;
+    &lt;a href=&quot;https://www.baidu.com/&quot;&gt;注册&lt;/a&gt;
+&lt;/body&gt;
+&lt;script&gt;
+    $(function () {
+        $(&quot;a&quot;).click(function (event) {
+            alert(&quot;注册&quot;)
+            event.preventDefault()
+        })
+    })
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h3 id="事件自动触发"><a href="#事件自动触发" class="header-anchor">#</a> 事件自动触发</h3> <h4 id="trigger"><a href="#trigger" class="header-anchor">#</a> trigger()</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>body&gt;
+    &lt;button&gt;
+        按钮
+    &lt;/button&gt;
+&lt;/body&gt;
+&lt;script&gt;
+    $(function () {
+        $(&quot;button&quot;).click(function () {
+            console.log(&quot;click&quot;);
+        })
+        $(&quot;button&quot;).trigger()
+    })
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>trigger()作用：方法触发被选元素上指定的事件</p> <h4 id="triggerhandler"><a href="#triggerhandler" class="header-anchor">#</a> triggerHandler()</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code> $(&quot;button&quot;).triggerHandler(&quot;click&quot;)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>triggerHandler()作用：方法触发被选元素上指定的事件</p> <h4 id="trigger和trigerhandler区别"><a href="#trigger和trigerhandler区别" class="header-anchor">#</a> trigger和trigerHandler区别</h4> <p>区别：</p> <ol><li><p>trigger：如果利用trigger自动触发事件，会触发事件冒泡</p> <p>triggerHandler：如果利用triggerHandler自动触发事件，不会触发事件冒泡</p></li> <li><p>trigger：如果利用trigger自动触发事件，会触发默认行为</p> <p>triggerHandler：如果利用triggerHandler自动触发事件，不会触发默认行为</p></li></ol> <h3 id="自定义事件"><a href="#自定义事件" class="header-anchor">#</a> 自定义事件</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;body&gt;
+    &lt;button&gt;按钮&lt;/button&gt;
+&lt;/body&gt;
+&lt;script&gt;
+    $(function () {
+        $(&quot;button&quot;).on(&quot;myClick&quot;, function () {
+            console.log(&quot;myClick&quot;)
+        })
+
+        $(&quot;button&quot;).trigger(&quot;myClick&quot;)
+    })
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>自定义事件需要满足两个条件：</p> <ol><li>事件必须是通过on绑定事件</li> <li>事件必须通过自动触发使用trigger()</li></ol> <h3 id="事件委托"><a href="#事件委托" class="header-anchor">#</a> 事件委托</h3> <p>事件委托的原理：</p> <p>就是利用事件冒泡原理实现的</p> <p>事件冒泡：就是事件最深节点开始，然后逐步向上传播事件</p> <ul><li>比如：给最里面的a 加一个click 事件，那么事件就会一层一层的往外执行，执行顺序 a &gt; li &gt; ul &gt; div,  有这样一个机制，当我们给最外层的div 添加点击事件，那么里面的ul ， li  ， a  做点击事件的时候，都会冒泡到最外层的div上，所以都会触发，这就是事件委托，委托他们父集代为执行事件；</li></ul> <p><strong>delegate()</strong>：方法为指定的元素（属于被选元素的子元素）添加一个或多个事件处理程序，并规定当这些事件发生时运行的函数。</p> <p>使用 delegate() 方法的事件处理程序适用于当前或未来的元素（比如由脚本创建的新元素）。</p> <p><strong>append()</strong>：方法在被选元素的结尾（仍然在内部）插入指定内容。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;body&gt;
+    &lt;ul&gt;
+        &lt;li&gt;我是li1&lt;/li&gt;
+        &lt;li&gt;我是li2&lt;/li&gt;
+        &lt;li&gt;我是li3&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;button&gt;添加&lt;/button&gt;
+&lt;/body&gt;
+&lt;script&gt;
+    $(function () {
+        $(&quot;ul&quot;).delegate(&quot;li&quot;, &quot;click&quot;, function () {
+            console.log($(this).html());
+        })
+        $(&quot;button&quot;).click(function () {
+            $(&quot;ul&quot;).append(&quot;&lt;li&gt;我是新增的li&lt;/li&gt;&quot;)
+        })
+    })
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h2 id="十一-效果"><a href="#十一-效果" class="header-anchor">#</a> 十一，效果</h2> <h3 id="基本"><a href="#基本" class="header-anchor">#</a> 基本</h3> <h4 id="show"><a href="#show" class="header-anchor">#</a> show()</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code> $(&quot;button&quot;).eq(0).click(function () {
+            $(&quot;div&quot;).show(1000, function () {
+                // 这里进行回调函数
+                console.log(&quot;显示动画完成&quot;);
+            })
+        })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>show()：方法用于显示隐藏的被选的元素</p> <h4 id="hide"><a href="#hide" class="header-anchor">#</a> hide()</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>  $(&quot;button&quot;).eq(1).click(function () {
+            $(&quot;div&quot;).hide(1000)
+            // 这里进行回调函数
+            console.log(&quot;隐藏动画完成&quot;);
+  })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>hide()：方法用于隐藏被选的元素</p> <h4 id="toggle"><a href="#toggle" class="header-anchor">#</a> toggle()</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>  $(&quot;button&quot;).eq(2).click(function () {
+         $(&quot;div&quot;).toggle(1000)
+   })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>toggle：方法切换元素的可见状态</p> <p>​		如果被选元素可见，则隐藏这些元素</p> <p>​		如果被选元素隐藏，则显示这些元素</p> <h3 id="滑动"><a href="#滑动" class="header-anchor">#</a> 滑动</h3> <h4 id="slidedown"><a href="#slidedown" class="header-anchor">#</a> slideDown()</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>  $(&quot;button&quot;).eq(0).click(function(){
+            $(&quot;div&quot;).slideDown(1000,function(){
+                console.log(&quot;展开完毕&quot;);
+            })
+  })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>slideDown()：方法用于显示隐藏的被选的元素</p> <h4 id="slideup"><a href="#slideup" class="header-anchor">#</a> slideUp()</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code> $(&quot;button&quot;).eq(1).click(function(){
+            $(&quot;div&quot;).slideUp(1000,function(){
+                console.log(&quot;收起完毕&quot;);
+            })
+  })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>slideup()：方法用于隐藏被选的元素</p> <h4 id="slidetoggle"><a href="#slidetoggle" class="header-anchor">#</a> slideToggle()</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code> $(&quot;button&quot;).eq(2).click(function(){
+            $(&quot;div&quot;).slideToggle(1000,function(){
+                console.log(&quot;切换完毕&quot;);
+            })
+ })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>slideToggle()：方法切换元素的可见状态</p> <p>​		如果被选元素可见，则隐藏这些元素</p> <p>​		如果被选元素隐藏，则显示这些元素</p> <h4 id="折叠菜单案例"><a href="#折叠菜单案例" class="header-anchor">#</a> 折叠菜单案例</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>  $(function(){
+        $(&quot;.nav&gt;li&quot;).click(function(){
+            // 获取元素找下层的box元素
+          var box=$(this).children(&quot;.box&quot;)
+            //  设置box切换，让二级菜单打开
+            box.slideToggle(1000)
+            // 让所以非当前的二级菜单收起
+            $(this).siblings().children(&quot;.box&quot;).slideUp(1000);  
+            // 让一级菜单的箭头旋转
+            $(this).children(&quot;span&quot;).addClass(&quot;xz&quot;)
+            // 让所有非当前的一级菜单的箭头还原    
+            $(this).siblings().children(&quot;span&quot;).removeClass(&quot;xz&quot;)
+        })
+    })
+&lt;/script
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>下拉菜单案例</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>$(function(){
+        $(&quot;.nav&quot;).children(&quot;li&quot;).mouseenter(function(){
+            // 停止当前正在运行的动画
+            $(this).children(&quot;.box&quot;).stop()
+            // 让二级菜单展开
+            $(this).children(&quot;.box&quot;).slideDown(1000)
+        })
+        $(&quot;.nav&quot;).children(&quot;li&quot;).mouseleave(function(){
+            // 停止当前正在运行的动画
+            $(this).children(&quot;.box&quot;).stop()
+            // 让二级菜单收起
+            $(this).children(&quot;.box&quot;).slideUp(1000)
+        })
+    })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h3 id="淡入淡出"><a href="#淡入淡出" class="header-anchor">#</a> 淡入淡出</h3> <h4 id="fadein"><a href="#fadein" class="header-anchor">#</a> fadeIn()</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code> $(&quot;button&quot;).eq(0).click(function(){
+            $(&quot;div&quot;).fadeIn(1000,function(){
+                console.log(&quot;淡入完毕&quot;);  //回调函数
+            })
+        })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>fadeIn()：方法使用淡入效果来显示被选元素</p> <h4 id="fadeout"><a href="#fadeout" class="header-anchor">#</a> fadeOut()</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>        $(&quot;button&quot;).eq(1).click(function(){
+            $(&quot;div&quot;).fadeOut(1000,function(){
+                console.log(&quot;淡出完毕&quot;); //回调函数
+            })
+        })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>fadeOut()：方法使用淡出效果来隐藏被选元素</p> <h4 id="fadetoggle"><a href="#fadetoggle" class="header-anchor">#</a> fadeToggle()</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>        $(&quot;button&quot;).eq(2).click(function(){
+            $(&quot;div&quot;).fadeToggle(1000,function(){
+                console.log(&quot;切换完毕&quot;); //回调函数
+            })
+        })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>fadeToggle()：方法在fadeIn() 和fadeOut()方法之间切换</p> <h4 id="fadeto"><a href="#fadeto" class="header-anchor">#</a> fadeTo()</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code> $(&quot;button&quot;).eq(3).click(function(){
+            $(&quot;div&quot;).fadeTo(1000,0.3,function(){
+                console.log(&quot;完毕&quot;); //回调函数
+            })
+        })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>fadeTo()：方法将被选元素的不透明度逐渐地改变为指定的值</p> <h4 id="弹窗广告案例"><a href="#弹窗广告案例" class="header-anchor">#</a> 弹窗广告案例</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>  $(function(){
+        $(&quot;span&quot;).click(function(){
+            $(&quot;.ad&quot;).slideUp(1000)
+        })
+        // $(&quot;.ad&quot;).slideDown(1000,function(){
+        //     $(this).fadeOut(1000,function(){
+        //         $(this).fadeIn(1000)
+        //     })
+        // })
+        $(&quot;.ad&quot;).stop().slideDown(1000).fadeOut(1000).fadeIn(1000)
+    })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p><img src="C:%5CUsers%5C111%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210109120355779.png" alt="image-20210109120355779"></p> <h3 id="自定义"><a href="#自定义" class="header-anchor">#</a> 自定义</h3> <h4 id="animate"><a href="#animate" class="header-anchor">#</a> animate()</h4> <p>​		animate()：用于创建自定义动画的函数</p> <div class="language- line-numbers-mode"><pre class="language-text"><code> $(&quot;button&quot;).eq(0).click(function(){
+            $(&quot;.box2&quot;).animate({width:500},2000,&quot;linear&quot;,function(){
+                console.log(&quot;回调函数&quot;);  //box2的宽度修改为500
+            })
+             $(&quot;.box1&quot;).animate({width:&quot;+=100&quot;},2000,function(){
+                console.log(&quot;回调函数&quot;);	//box1的宽度累加100
+            })
+            $(&quot;.box2&quot;).animate({width:&quot;toggle&quot;},1000,function(){
+                console.log(&quot;回调函数&quot;);	//box2的宽度切换显示或隐藏
+            })
+ 	})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>animate()：的参数</p> <p>​	第一个参数：接收一个对象，可以在对象中修改属性</p> <p>​	第二个参数：指定动画时长</p> <p>​	第三个参数：指定动画节奏，默认就是swing，或 linear</p> <p>​	第四个参数：动画执行完毕之后的回调函数</p> <h4 id="delay"><a href="#delay" class="header-anchor">#</a> delay()</h4> <p>​	delay()：设置一个延迟执行队列中之后的项目</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>  $(&quot;button&quot;).eq(0).click(function(){
+            $(&quot;.box1&quot;).animate({
+                width:400
+            },1000,function(){
+                console.log(&quot;回调函数&quot;);
+            }).delay(1000).animate({height:400},1000,function(){
+                console.log(&quot;回调函数&quot;);
+            })
+        })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h4 id="stop"><a href="#stop" class="header-anchor">#</a> stop()</h4> <p>​	stop()：方法停止当前正在运行的动画</p> <p>​				在jquery中如果需要执行动画，建议在执行动画之前先调用stop方法，然后再执行动画</p> <div class="language- line-numbers-mode"><pre class="language-text"><code> $(&quot;button&quot;).eq(1).click(function(){
+            // 立即停止当前动画，继续执行后续的动画
+            $(&quot;div&quot;).stop();
+            $(&quot;div&quot;).stop(false);
+            $(&quot;div&quot;).stop(false,false);
+
+            // 立即停止当前和后续所有的动画
+            $(&quot;div&quot;).stop(true);
+            $(&quot;div&quot;).stop(true,false);
+
+            // 立即完成当前的，继续执行后续动画
+            $(&quot;div&quot;).stop(false,true);
+
+            // 立即完成当前的，并且停止后续所有的
+            $(&quot;div&quot;).stop(true,true)
+        })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h2 id="十二-文档处理"><a href="#十二-文档处理" class="header-anchor">#</a> 十二，文档处理</h2> <h3 id="内部插入节点"><a href="#内部插入节点" class="header-anchor">#</a> 内部插入节点</h3> <h4 id="append-2"><a href="#append-2" class="header-anchor">#</a> append()</h4> <h4 id="appendto"><a href="#appendto" class="header-anchor">#</a> appendTo()</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>  $(&quot;button&quot;).on(&quot;click&quot;,function(){
+        var li=$(&quot;&lt;li&gt;我是新增的li&lt;/li&gt;&quot;);
+        // $(&quot;ul&quot;).append(li)
+        li.appendTo(&quot;ul&quot;);
+      })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>append()和appendTo()作用：一样都会将元素添加到指定元素内部的最后面</p> <h4 id="prepend"><a href="#prepend" class="header-anchor">#</a> prepend()</h4> <h4 id="prependto"><a href="#prependto" class="header-anchor">#</a> prependTO()</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>$(&quot;button&quot;).on(&quot;click&quot;,function(){
+        var li=$(&quot;&lt;li&gt;我是新增的li&lt;/li&gt;&quot;);
+        // $(&quot;ul&quot;).prepend(li)
+            li.prependTo(&quot;ul&quot;)
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>prepend()和prependTo()作用：一样都会将元素添加到指定元素内部的最前面</p> <h3 id="外部插入节点"><a href="#外部插入节点" class="header-anchor">#</a> 外部插入节点</h3> <h4 id="after"><a href="#after" class="header-anchor">#</a> after()</h4> <h4 id="insertafter"><a href="#insertafter" class="header-anchor">#</a> insertAfter()</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code> $(&quot;button&quot;).on(&quot;click&quot;,function(){
+        var li=$(&quot;&lt;li&gt;我是新增的li&lt;/li&gt;&quot;);
+           // $(&quot;ul&quot;).after(li)
+            li.insertAfter(&quot;ul&quot;)
+   })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>after()和insertAfter()作用：一样都会元素添加到指定元素的外部的后面</p> <h4 id="before"><a href="#before" class="header-anchor">#</a> before()</h4> <h4 id="insertbefore"><a href="#insertbefore" class="header-anchor">#</a> insertBefore()</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>$(&quot;button&quot;).on(&quot;click&quot;,function(){
+        var li=$(&quot;&lt;li&gt;我是新增的li&lt;/li&gt;&quot;);
+        //    $(&quot;ul&quot;).before(li)
+            li.insertBefore(&quot;ul&quot;)
+ })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>before()和insertBefore()作用：一样都会元素添加到指定元素外部的前面</p> <h3 id="删除节点"><a href="#删除节点" class="header-anchor">#</a> 删除节点</h3> <h4 id="remove-2"><a href="#remove-2" class="header-anchor">#</a> remove()</h4> <h4 id="detach"><a href="#detach" class="header-anchor">#</a> detach()</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code> $(function(){
+            $(&quot;button&quot;).click(function(){
+                $(&quot;li&quot;).remove()
+                $(&quot;li&quot;).detach()
+            })
+ })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>remove()和detach()作用：删除指定元素</p> <h4 id="empty-2"><a href="#empty-2" class="header-anchor">#</a> empty()</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code> $(function(){
+    $(&quot;button&quot;).click(function(){
+        $(&quot;ul&quot;).empty()
+     })
+  })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>empty()作用：删除指定元素的内容和子元素，指定元素本身不会被删除</p> <h3 id="替换节点"><a href="#替换节点" class="header-anchor">#</a> 替换节点</h3> <h4 id="replacewith"><a href="#replacewith" class="header-anchor">#</a> replacewith()</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>  &lt;script&gt;
+        $(function(){
+            $(&quot;button&quot;).click(function(){
+                var $h6=$(&quot;&lt;h6&gt;我是标题6&lt;/h6&gt;&quot;)
+                $(&quot;h1&quot;).replaceWith($h6)
+            })
+        })
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;button&gt;替换&lt;/button&gt;
+    &lt;h1&gt;我是标题1&lt;/h1&gt;
+    &lt;h1&gt;我是标题1&lt;/h1&gt;
+    &lt;h1&gt;我是标题1&lt;/h1&gt;
+&lt;/body&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>replacewith()：方法用指定的 HTML 内容或元素替换被选元素，会合并元素</p> <p><img src="C:%5CUsers%5C111%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210110132414160.png" alt="image-20210110132414160"></p> <h4 id="replaceall"><a href="#replaceall" class="header-anchor">#</a> replaceAll()</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code> $(&quot;button&quot;).click(function(){
+                var $h6=$(&quot;&lt;h6&gt;我是标题6&lt;/h6&gt;&quot;)
+                $h6.replaceAll(&quot;h1&quot;)
+            })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>replaceAll()方法用指定的 HTML 内容或元素替换被选元素，不会合并元素</p> <p><img src="C:%5CUsers%5C111%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210110132611374.png" alt="image-20210110132611374"></p> <h3 id="复制节点"><a href="#复制节点" class="header-anchor">#</a> 复制节点</h3> <h4 id="clone"><a href="#clone" class="header-anchor">#</a> clone()</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code> &lt;script&gt;
+        $(function(){
+            $(&quot;button&quot;).eq(0).click(function(){
+                // 1.浅复制一个元素
+                var li=$(&quot;li:first&quot;).clone(false);
+                // 2.将复制的元素添加到ul中
+                $(&quot;ul&quot;).append(li);
+            })
+            $(&quot;button&quot;).eq(1).click(function(){
+                //1.深复制一个元素
+               var li=$(&quot;li:first&quot;).clone(true)
+                //2.将复制的元素添加到ul中    
+               $(&quot;ul&quot;).append(li)
+            })
+            // li点击事件
+            $(&quot;li&quot;).click(function(){
+                alert(&quot;li&quot;)
+            })
+        })
+    &lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><p>clone()：复制节点，如果传入false就是浅复制，如果传入true就是深复制</p> <ol><li>浅复制就会复制元素，不会复制元素的事件</li> <li>深复制会复制元素，而且还会复制元素的事</li></ol></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-cb1513f6><li class="level-2" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#一-为什么要学jquery" class="sidebar-link reco-side-一-为什么要学jquery" data-v-cb1513f6>一，为什么要学jquery</a></li><li class="level-2" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#二-jquery到底是什么" class="sidebar-link reco-side-二-jquery到底是什么" data-v-cb1513f6>二，jquery到底是什么</a></li><li class="level-2" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#三-jquery的版本问题" class="sidebar-link reco-side-三-jquery的版本问题" data-v-cb1513f6>三，jquery的版本问题</a></li><li class="level-2" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#四-jquery的入口函数" class="sidebar-link reco-side-四-jquery的入口函数" data-v-cb1513f6>四，jquery的入口函数</a></li><li class="level-2" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#五-jq对象和dom对象-重要" class="sidebar-link reco-side-五-jq对象和dom对象-重要" data-v-cb1513f6>五，jq对象和dom对象(重要)</a></li><li class="level-2" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#六-jquery方法" class="sidebar-link reco-side-六-jquery方法" data-v-cb1513f6>六，jquery方法</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#each" class="sidebar-link reco-side-each" data-v-cb1513f6>each()</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#map" class="sidebar-link reco-side-map" data-v-cb1513f6>map()</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#trim" class="sidebar-link reco-side-trim" data-v-cb1513f6>trim()</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#iswindow" class="sidebar-link reco-side-iswindow" data-v-cb1513f6>isWindow()</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#isarray" class="sidebar-link reco-side-isarray" data-v-cb1513f6>isArray()</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#isfunction" class="sidebar-link reco-side-isfunction" data-v-cb1513f6>isFunction()</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#holdready" class="sidebar-link reco-side-holdready" data-v-cb1513f6>holdReady()</a></li><li class="level-2" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#七-jquery选择器" class="sidebar-link reco-side-七-jquery选择器" data-v-cb1513f6>七，jquery选择器</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#empty" class="sidebar-link reco-side-empty" data-v-cb1513f6>empty</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#parent" class="sidebar-link reco-side-parent" data-v-cb1513f6>parent</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#contains" class="sidebar-link reco-side-contains" data-v-cb1513f6>contains()</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#has" class="sidebar-link reco-side-has" data-v-cb1513f6>has()</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#siblings" class="sidebar-link reco-side-siblings" data-v-cb1513f6>siblings()</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#children" class="sidebar-link reco-side-children" data-v-cb1513f6>children()</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#each-2" class="sidebar-link reco-side-each-2" data-v-cb1513f6>each()</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#nextall" class="sidebar-link reco-side-nextall" data-v-cb1513f6>nextAll()</a></li><li class="level-2" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#八-jquery属性和属性节点" class="sidebar-link reco-side-八-jquery属性和属性节点" data-v-cb1513f6>八，jquery属性和属性节点</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#什么是属性" class="sidebar-link reco-side-什么是属性" data-v-cb1513f6>什么是属性？</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#如何操作属性" class="sidebar-link reco-side-如何操作属性" data-v-cb1513f6>如何操作属性？</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#什么事属性节点" class="sidebar-link reco-side-什么事属性节点" data-v-cb1513f6>什么事属性节点？</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#如何操作属性节点" class="sidebar-link reco-side-如何操作属性节点" data-v-cb1513f6>如何操作属性节点？</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#属性和属性节点有什么区别" class="sidebar-link reco-side-属性和属性节点有什么区别" data-v-cb1513f6>属性和属性节点有什么区别？</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#attr" class="sidebar-link reco-side-attr" data-v-cb1513f6>attr()</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#removeattr" class="sidebar-link reco-side-removeattr" data-v-cb1513f6>removeAttr()</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#prop" class="sidebar-link reco-side-prop" data-v-cb1513f6>prop()</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#切换图片src案例" class="sidebar-link reco-side-切换图片src案例" data-v-cb1513f6>切换图片src案例</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#addclass" class="sidebar-link reco-side-addclass" data-v-cb1513f6>addClass()</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#removeclass" class="sidebar-link reco-side-removeclass" data-v-cb1513f6>removeClass()</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#toggleclass" class="sidebar-link reco-side-toggleclass" data-v-cb1513f6>toggleClass()</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#html" class="sidebar-link reco-side-html" data-v-cb1513f6>html()</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#append" class="sidebar-link reco-side-append" data-v-cb1513f6>append()</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#text" class="sidebar-link reco-side-text" data-v-cb1513f6>text()</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#val" class="sidebar-link reco-side-val" data-v-cb1513f6>val()</a></li><li class="level-2" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#九-操作css" class="sidebar-link reco-side-九-操作css" data-v-cb1513f6>九，操作css</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#css" class="sidebar-link reco-side-css" data-v-cb1513f6>css()</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#位置" class="sidebar-link reco-side-位置" data-v-cb1513f6>位置</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#尺寸" class="sidebar-link reco-side-尺寸" data-v-cb1513f6>尺寸</a></li><li class="level-2" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#十-事件" class="sidebar-link reco-side-十-事件" data-v-cb1513f6>十，事件</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#事件" class="sidebar-link reco-side-事件" data-v-cb1513f6>事件</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#事件解绑" class="sidebar-link reco-side-事件解绑" data-v-cb1513f6>事件解绑</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#事件冒泡" class="sidebar-link reco-side-事件冒泡" data-v-cb1513f6>事件冒泡</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#阻止默认事件" class="sidebar-link reco-side-阻止默认事件" data-v-cb1513f6>阻止默认事件</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#事件自动触发" class="sidebar-link reco-side-事件自动触发" data-v-cb1513f6>事件自动触发</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#自定义事件" class="sidebar-link reco-side-自定义事件" data-v-cb1513f6>自定义事件</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#事件委托" class="sidebar-link reco-side-事件委托" data-v-cb1513f6>事件委托</a></li><li class="level-2" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#十一-效果" class="sidebar-link reco-side-十一-效果" data-v-cb1513f6>十一，效果</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#基本" class="sidebar-link reco-side-基本" data-v-cb1513f6>基本</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#滑动" class="sidebar-link reco-side-滑动" data-v-cb1513f6>滑动</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#淡入淡出" class="sidebar-link reco-side-淡入淡出" data-v-cb1513f6>淡入淡出</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#自定义" class="sidebar-link reco-side-自定义" data-v-cb1513f6>自定义</a></li><li class="level-2" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#十二-文档处理" class="sidebar-link reco-side-十二-文档处理" data-v-cb1513f6>十二，文档处理</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#内部插入节点" class="sidebar-link reco-side-内部插入节点" data-v-cb1513f6>内部插入节点</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#外部插入节点" class="sidebar-link reco-side-外部插入节点" data-v-cb1513f6>外部插入节点</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#删除节点" class="sidebar-link reco-side-删除节点" data-v-cb1513f6>删除节点</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#替换节点" class="sidebar-link reco-side-替换节点" data-v-cb1513f6>替换节点</a></li><li class="level-3" data-v-cb1513f6><a href="/./blogs/foreEnd/JQ/#复制节点" class="sidebar-link reco-side-复制节点" data-v-cb1513f6>复制节点</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="./assets/js/app.a2028b6d.js" defer></script><script src="./assets/js/3.f347c82f.js" defer></script><script src="./assets/js/1.d0ce8f0b.js" defer></script><script src="./assets/js/17.f0d94806.js" defer></script>
+  </body>
+</html>
